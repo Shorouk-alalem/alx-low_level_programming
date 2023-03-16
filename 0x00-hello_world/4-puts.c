@@ -1,6 +1,7 @@
 #include<stdio.h>
 /**
- * Printing a line with put function
+ * main - a program to print a sentence with puts function
+ * Return: 0 (Success)
  */
 int main(void)
 {
