@@ -1,19 +1,17 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _puts_recursion - print a string
- * @s:string
- * Return:void
+ * _puts_recursion - Entry Point
+ * @s: input
+ * Return: Always 0 (Success)
  */
 void _puts_recursion(char *s)
 {
-if (*s)
-{
-	_putchar(*s);
-	_puts_recursion(s + 1);
-}
-else
-{
-	_putchar('\n');
-}
-
+	if (*s == '\0')
+		_putchar('\n');
+	else
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
 }
